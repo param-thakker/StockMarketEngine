@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="/static/styles.css" />
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+        <script src="/static/script.js" defer></script>
+    </head>
+    
+    <body class="body-background">  
+        <div>
+            <div class="stock-title">    
+                Stock Search
+            </div>
+            <div>
+                <div class="sBar">
+                   
+                    <!--https://www.kindacode.com/article/css-make-a-search-field-with-a-magnifying-glass-icon-inside/-->
+                    <form action="/" method="GET" class="sForm">
+                        <button type="submit" id="sButton">
+                            <img src="/static/images/search-solid.svg" class="search-img">
+                        </button>
+                        <input type="text" placeholder="Enter Stock Ticker Symbol" class="input-field"
+                         oninput="this.value = this.value.toUpperCase()" name="ticker_name" required autocomplete="'off">
+                         <button type="reset" id="cButton"><img src="/static/images/times-solid.svg" class="clear-img"></button>
+                    </form>
+                </div>
+                <div id="error_result" style="display: none;">
+                    <div class="error_msg" style="justify-content: center; margin-left: 500px; margin-right: 450px; background-color: gray; padding: 20px;" >Error : No record has been found, please enter a valid symbol.</div>
+                </div>
+                <div>
+
+                <!-- Source:
+                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs -->
+
+                    <div id="result-area" style="display:none;">
+                        <div class="tabs-bar">
+                           
+                            <button class="tabs active" onclick="newTab(event,'outlook-content')">
+                                Company
+                            </button>
+                            <button class="tabs" onclick="newTab(event,'summary-content')">
+                                Summary
+                            </button>
+                            <button class="tabs" onclick="newTab(event,'charts-content')">
+                                Charts
+                            </button>
+                            <button class="tabs" onclick="newTab(event,'news-content')">
+                                Latest News
+                            </button>
+                        </div>
+                        <div class="content">
+                            
+                            <div id="outlook-content" class="tab-content">
+                                
+                            </div>
+
+                            <div id="summary-content" class="tab-content">
+
+                            </div>
+
+                            <div id="charts-content" class="tab-content">
+                                <div id="create_chart"></div>
+                            </div>
+
+                            <div id="news-content" class="tab-content">
+     
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

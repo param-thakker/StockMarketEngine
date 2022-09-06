@@ -1,0 +1,230 @@
+ .body-background{
+  background-color: rgba(223, 220, 210, 0.979);
+}
+.stock-title{
+      margin: 40px;
+      text-align: center;
+      padding-left: 30%;
+      padding-right: 30%;
+      font-weight: 600;
+      font-size: 25px;
+}
+.sBar {
+    margin: 0px auto;
+    width: 600px;
+    height: 140px
+  }
+  
+.sForm {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  height: 39px;
+}
+input:focus{
+  background-color: white !important;
+}
+.input-field {
+    width: 100%;
+    padding: 12px 10px ;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    opacity: 0.5;
+}
+#sButton {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 14px;
+  width: 8%;
+  height: 36px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.search-img{
+  width: 100%;
+  margin-top: -4px;
+} 
+.sButton img {
+  width: 13px;
+  height: 13px;
+  object-fit: cover;
+}
+#result-area{
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+}
+.tabs-bar{
+  width: 100%;
+  
+  display: inline-block;
+  background: white;
+}
+.tabs {
+  width: auto;
+  border: 0;
+  margin: 0;
+  margin-right: 0;
+  background: white;
+  cursor: pointer;
+  padding: 10px;
+}
+.tabs:hover{
+  background-color: #eee;
+}
+.tabs.active{
+  background-color: #bbb;
+}
+
+.rowTitle{
+  display: flex;
+
+}
+
+.content{
+  width: auto;
+  height: 500px;
+}
+.tabs-content{
+  height: 400px;
+}
+.profile-content{
+  padding: 10px;
+}
+
+.imageDiv{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  padding-bottom: 14px;
+}
+
+.pImage{
+  height: 100px;
+  
+}
+.body-background{
+    background: url('./images/back.svg') no-repeat;
+}
+.content-body{
+  padding: 5% 25%;
+}
+.sBody{
+  padding: 5% 25%;
+}
+.container{
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  border-top: rgb(158, 155, 155/24%) 1px solid;
+  text-align: center;
+  justify-content: center;
+}
+.footerInfo{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+   
+    text-align: center;
+    justify-content: center;
+}
+.ss{
+    color:red;
+}
+.buy{
+    width: 14%;
+    text-align: center;
+    background: #3bca6d;
+    color: white;
+}
+.sBuy{
+    width: 14%;
+    text-align: center;
+    background: #00ff7f;
+    color: white;
+}
+.sb{
+    color:#00ff7f;
+}
+.recommendation{
+    display: flex;
+    width: 100%;
+    margin-top:20px;
+}
+
+
+#cButton{
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+  width: 7%;
+  height:34px;
+  border-left: 1px #0f0f0f1a solid;
+  opacity: 0.5;
+}
+.clear-img{
+  width: 100%;
+  margin-top: -4px;
+  opacity: 0.5;
+}
+.rowTitle{
+  font-weight: 600;
+  width: 50%;
+  text-align: right;
+  justify-content: right;
+  padding-right: 18px;
+}
+.rowValue{
+  width: 50%;
+  text-align: left;
+}
+
+.arrow-direction{
+  width: 10px;
+}
+
+.box{
+  height: 83px;
+  display: flex;
+  margin: 10px 0px;
+  background: #bbb;
+}
+.sSell{
+  width: 14%;
+  text-align: center;
+  background: red;
+  color: white;
+}
+.sell{
+  width: 14%;
+  text-align: center;
+  background: #b25f4a;
+  color: white;
+}
+.hold{
+  width: 14%;
+  text-align: center;
+  background: #77945c;
+  color: white;
+}
+.center-crop-img{
+  height: 66px;
+  width: auto;
+  padding: 6px;
+}
+.nImage{
+  height: 75px;
+  width: 110px;
+}
+p{
+  margin: 0px;
+}
+.tabs-content{
+    height: 400px;
+}
